@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #ffe6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #ff66a3;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ffb3d9;
+      border-radius: 8px;
+      width: 200px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ff66a3;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff3385;
+    }
+
+    #mensagem {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Login 💖</h2>
+
+    <input type="text" id="usuario" placeholder="Usuário">
+    <br>
+
+    <input type="password" id="senha" placeholder="Senha">
+    <br>
+
+    <button onclick="login()">Entrar</button>
+
+    <p id="mensagem"></p>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
